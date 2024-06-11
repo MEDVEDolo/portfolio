@@ -1,0 +1,193 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    overflow-x: hidden;
+    }
+
+a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+body{
+    background: rgb(48,0,115);
+    background: -moz-radial-gradient(circle, rgba(48,0,115,1) 0%, rgba(33,0,69,1) 0%, rgba(109,61,136,1) 78%, rgba(103,10,139,1) 89%, rgba(65,38,148,1) 98%, rgba(0,10,113,1) 100%);
+    background: -webkit-radial-gradient(circle, rgba(48,0,115,1) 0%, rgba(33,0,69,1) 0%, rgba(109,61,136,1) 78%, rgba(103,10,139,1) 89%, rgba(65,38,148,1) 98%, rgba(0,10,113,1) 100%);
+    background: radial-gradient(circle, rgba(48,0,115,1) 0%, rgba(33,0,69,1) 0%, rgba(109,61,136,1) 78%, rgba(103,10,139,1) 89%, rgba(65,38,148,1) 98%, rgba(0,10,113,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#300073",endColorstr="#000a71",GradientType=1);
+    position: relative;
+}
+
+.container{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.hero-block__title{
+    color:#FFFFFF;
+    font-family: "Inter", sans-serif;
+    margin-bottom: 45px;
+}
+.hero-block__title_top{
+    font-size: 25px;
+    font-weight: 300;
+    animation-duration: 3.5s;
+    animation-name: slideleft;
+    animation-delay: 1.5s;
+    animation-fill-mode: backwards;
+}
+.hero-block__title_mid{
+    font-size: 170px;
+    font-weight: 400;
+    animation-duration: 5s;
+    animation-name: appearance;
+}
+.hero-block__title_bottom{
+    text-align: right;
+    font-size: 25px;
+    font-weight: 400;
+    animation-duration: 3.5s;
+    animation-name: slideright;
+    animation-delay: 1.5s;
+    animation-fill-mode: backwards;
+}
+.container_hero-block{
+    padding: 300px  0 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.hero-block__btn{
+    padding: 14px 26px;
+    font-size: 25px;
+    font-weight: 400;
+    background: linear-gradient(90deg, #5830AB 0%, #B819B1 100%);
+    border-radius: 10px;
+    color: #FFFFFF;
+    border: 2px solid #FFFFFF;
+    cursor: pointer;
+    text-decoration: none;
+    font-family: inter;
+}
+
+.container_works {
+    padding: 60px 0 150px 0;
+}
+
+.works__list {
+    list-style: none;
+}
+
+.works__item:not(:last-of-type) {
+    margin-bottom: 90px;
+}
+
+.works__item_g {
+    background-image: url(../img/birmingham-museums-trust-1920.jpg);
+}
+
+.works__item_v {
+    background-image: url(../img/mic_big.png);
+    background-repeat: no-repeat;
+    background-position: 90% 0;
+}
+
+.works__link {
+    display: block;
+    padding: 90px 40px;
+}
+
+.works__title {
+    font-size: 100px;
+}
+
+.works__description {
+    font-size: 30px;
+}
+
+/* .works__title_v {
+    color: black;
+}
+
+.works__description_v {
+    color: black;
+} */
+
+.cube1{
+    position: absolute;
+    top: -380px;
+    width: 500px;
+    left: 0;
+    z-index: -1;
+    animation-duration: 5s;
+    animation-name: fly;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+.cube2{
+    position: absolute;
+    top: -60px;
+    width: 500px;
+    right: 0;
+    z-index: -1;
+    animation-duration: 6s;
+    animation-name: fly;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+.cube3{
+    position: absolute;
+    top: 750px;
+    width: 550px;
+    right: 680px;
+    z-index: -1;
+    animation-duration: 3s;
+    animation-name: fly;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+.cube4{
+    position: absolute;
+    bottom: 0;
+    width: 550px;
+    right: 0;
+    z-index: -1;
+    animation-duration: 4s;
+    animation-name: fly;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes appearance {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+}
+@keyframes slideleft {
+    from {
+   transform: translateX(-100%);
+    }
+    to {
+    transform: translateX(0);
+    }
+}
+@keyframes slideright {
+    from {
+   transform: translateX(100%);
+    }
+    to {
+    transform: translateX(0);
+    }
+}
+@keyframes fly {
+    from {
+   transform: translateY(5%);
+    }
+    to {
+    transform: translateY(0);
+    }
+}
