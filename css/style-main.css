@@ -159,6 +159,70 @@ body{
     animation-iteration-count: infinite;
     animation-direction: alternate;
 }
+
+@media screen and (max-width: 1024px) {
+    .container {
+        max-width: 823px;
+    }
+
+    .container_hero-block {
+        padding: 100px 0 200px;
+    }
+
+    .hero-block__title_mid {
+        font-size: 120px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        max-width: 540px;
+    }
+
+    .hero-block__title_mid {
+        font-size: 80px;
+    }
+
+
+}
+
+@media screen and (max-width: 500px) {
+    .container {
+        max-width: 256px;
+    }
+
+    .hero-block__title_mid {
+        font-size: 50px;
+    }
+
+    .hero-block__title_top {
+        font-size: 20px;
+    }
+
+    .hero-block__title_bottom {
+        font-size: 20px;
+    }
+
+    
+    .hero-block__btn {
+        font-size: 20px;
+    }
+
+    .works__title {
+        font-size: 50px;
+        line-height: 35px;
+        margin-bottom: 80px;
+    }
+
+    .works__description {
+        font-size: 20px
+    }
+
+    .cube1 {
+        width: 70%;
+    }
+}
+
 @keyframes appearance {
     from {
       opacity: 0;
