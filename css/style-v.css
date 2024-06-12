@@ -1154,6 +1154,7 @@ button {
         font-size: 12px;
         font-weight: 400;
         line-height: 16px;
+        width: 100%;
     }
 
     .container_footer {
@@ -1170,6 +1171,10 @@ button {
 
     .footer__list {
         max-height: 250px;
+    }
+
+    .footer__item:nth-child(-n+6) {
+        margin-right: 0;
     }
 
     .footer__item:nth-child(-n+5) {
