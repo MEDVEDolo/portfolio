@@ -635,10 +635,6 @@ button {
     max-height: 70px;
 }
 
-.footer__item {
-
-}
-
 .footer__item:nth-child(-n+6) {
     margin-right: 120px;
 }
